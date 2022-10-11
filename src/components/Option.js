@@ -6,7 +6,7 @@ const Option = ({option}) => {
              
        <button
             type='button'
-            className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-teal-300 text-gray-800 hover:bg-cyan-400'
+            className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-teal-300 text-gray-800 hover:bg-cyan-400 sm: text-2xl'
           >
             <p>{option}</p>
           </button>
