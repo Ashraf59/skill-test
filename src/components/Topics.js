@@ -11,26 +11,14 @@ const Topics = ({quiz}) => {
 
     return (
      <div className='quiz'>
-           
-     <div className=' p-12 rounded shadow-lg w-2/4 m-auto '>
-           <div className='mb-5 text-xl font-bold leading-none sm:text-2xl my-15 bg-gray-100 p-12'>
-           <p className='text-center mb-8'>Question:  {question}</p>
-            
-            <div className='m-auto'>
-            
-            
-                
+        <p className='text-center text-2xl mb-6 font-semibold text-gray-600'>Question:  {question}</p>
+        <div className='m-auto'>  
             {
                 options.map(option => <Option
                 option = {option}
                 ></Option>)
             }
-            </div>
-            
-
-           </div>
-           
-      </div>
+        </div>
      </div>
     );
 };
