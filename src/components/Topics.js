@@ -7,7 +7,7 @@ import { EyeSlashIcon } from '@heroicons/react/24/solid';
 
 const Topics = ({quiz}) => {
     // const quizes = useLoaderData()
-    // console.log(quiz)
+    console.log(quiz)
     const {id, options, correctAnswer, question } = quiz;
 
     const handleAnswer = (option) =>{
@@ -31,9 +31,10 @@ const Topics = ({quiz}) => {
         <p><span onClick={() => handleIcon(id)}><EyeSlashIcon className="h-6 w-6 text-blue-500"/></span></p>
         <div className='m-auto'>  
             {
-                options.map(option => <Option
+                options.map((option, idx) => <Option
                 option = {option}
                 handleAnswer = {handleAnswer}
+                key = {idx}
                 ></Option>)
             }
         </div>

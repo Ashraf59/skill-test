@@ -17,13 +17,14 @@ const Statistics = () => {
                 }
         ];
     return (
-        <div className='mt-12'>
+        <div className='mt-12 container flex flex-col items-center justify-center'>
             <BarChart width={400} height={300} data={data}>
                 <Bar dataKey="total" fill="#8884d8" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
             </BarChart>
+            <h2 className='text-2xl font-semibold sm:text-4xl text-center text-gray-500 mb-8'>Bar Chart: for showing skill test</h2>
         </div>
     );
 };
