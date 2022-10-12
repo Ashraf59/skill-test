@@ -7,8 +7,8 @@ import { EyeSlashIcon } from '@heroicons/react/24/solid';
 
 const Topics = ({quiz}) => {
     // const quizes = useLoaderData()
-    console.log(quiz)
-    const {id, options, correctAnswer, question } = quiz;
+    // console.log(quiz)
+    const {id, options, correctAnswer, question} = quiz;
 
     const handleAnswer = (option) =>{
         if(option === correctAnswer){
